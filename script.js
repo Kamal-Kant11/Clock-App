@@ -16,8 +16,9 @@ setInterval(()=>{
     document.querySelector(".mhand").style.transform = `rotate(${minsRot}deg)`;
     document.querySelector(".shand").style.transform = `rotate(${secsRot}deg)`;
 
-    h.innerHTML = `hrs <10 ? 0${hrs} : hrs`;
-    m.innerHTML = `mins <10 ? 0${mins} : mins`;
-    s.innerHTML = `secs <10 ? 0${secs} : secs`;
+    h.innerHTML = hrs <10 ? `0${hrs}` : hrs;
+    m.innerHTML = mins <10 ? `0${mins}` : mins;
+    s.innerHTML = secs <10 ? `0${secs}` : secs;
 },1000)
+
 
